@@ -14,4 +14,24 @@
         <servlet-name>Hello</servlet-name>
         <url-pattern>/myservlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GenericServe</servlet-name>
+        <servlet-class>com.servletbasics.sudh.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GenericServe</servlet-name>
+        <url-pattern>/gens</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HTTPServe</servlet-name>
+        <servlet-class>com.servletbasics.sudh.ProtocolSpecific</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HTTPServe</servlet-name>
+        <url-pattern>/httpserv</url-pattern>
+    </servlet-mapping>
 </web-app>
