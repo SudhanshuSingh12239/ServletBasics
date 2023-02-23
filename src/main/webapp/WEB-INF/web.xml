@@ -34,4 +34,13 @@
         <servlet-name>HTTPServe</servlet-name>
         <url-pattern>/httpserv</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServe</servlet-name>
+        <servlet-class>com.servletbasics.sudh.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServe</servlet-name>
+        <url-pattern>/regs</url-pattern>
+    </servlet-mapping>
 </web-app>
