@@ -1,6 +1,7 @@
 package com.servletbasics.sudh;
 
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -64,10 +65,17 @@ public class RegisterServlet extends HttpServlet {
             out.println("<h2>Course : " + course + "</h2>");
             printOnConsole(name,password,email,gender,course);
 
+            RequestDispatcher resd = request.getRequestDispatcher("success");
+            resd.forward(request,response);
+
         }
+
+
         else{
             out.println("<h1>You have not checked the Terms & Conditions !!!</h1>");
             System.out.println("You have not checked the Terms & Conditions !!!");
+            RequestDispatcher resd = request.getRequestDispatcher("register.html");
+            resd.include(request,response);
         }
 
     }

@@ -48,4 +48,14 @@
         <servlet-name>RegisterServe</servlet-name>
         <url-pattern>/regs</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DashboardServ</servlet-name>
+        <servlet-class>com.servletbasics.sudh.DashboardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DashboardServ</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
 </web-app>
