@@ -49,13 +49,25 @@
         <url-pattern>/regs</url-pattern>
     </servlet-mapping>
 
+
     <servlet>
-        <servlet-name>DashboardServ</servlet-name>
-        <servlet-class>com.servletbasics.sudh.DashboardServlet</servlet-class>
+        <servlet-name>S1</servlet-name>
+        <servlet-class>com.servletbasics.sudh.s1</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>DashboardServ</servlet-name>
-        <url-pattern>/success</url-pattern>
+        <servlet-name>S1</servlet-name>
+        <url-pattern>/s1</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>S2</servlet-name>
+        <servlet-class>com.servletbasics.sudh.s2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>S2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+
 </web-app>
