@@ -1,6 +1,7 @@
 package com.servletbasics.sudh;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,6 +23,9 @@ public class Servlet1 extends HttpServlet {
         String name = req.getParameter("name");
         out.println("<h1> Hello, " + name + " ! This is My Website Using First Servlet......</h1>");
         out.println("<h1><a href='servlet2'>Go To Servlet2</a></h1> ");
+        //Cookie
+        Cookie c = new Cookie("user_name",name);
+        resp.addCookie(c);
         out.println("</body>");
         out.println("</html>");
     }
